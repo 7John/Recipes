@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang=en>
 <head>
-
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="style/style.css" type="text/css">
-	<link rel="stylesheet" href="style/dark-mode.css" type="text/css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-	<title>Recipes</title>
-	
+<meta charset=UTF-8>
+<meta name=viewport content="width=device-width,initial-scale=1">
+<meta name=description content="Cooking Landing Page for testing response, interactive elements and Lighthouse">
+<link rel=stylesheet href=style/style.css>
+<link rel=stylesheet href=style/dark-mode.css>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css>
+<title>Recipes</title>
 </head>
 <body>
-
-<!-- sprite -->
-<svg style="display: none;">
-	<symbol id="vk" viewBox="0 0 511.962 511.962">
-		<g>
-			<path d="M250.503,400.807h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+<svg style=display:none>
+<symbol id=vk viewBox="0 0 511.962 511.962">
+<g>
+<path d="M250.503,400.807h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
 				s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
 				c0,0,35.776-2.208,18.816-30.336c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
 				c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
@@ -27,18 +24,16 @@
 				c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
 				c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
 				C182.983,404.871,250.503,400.807,250.503,400.807L250.503,400.807z"/>
-		</g>
-	</symbol>
-
-	<symbol id="facebook" viewBox="0 0 25 48">	
-        	<g transform="translate(-176.000000, -55.000000)">
-	            <path d="M200.78439,55.3395122 L200.78439,62.9141463 L196.28878,62.9258537 C192.764878,62.9258537 192.085854,64.6 192.085854,67.0468293 L192.085854,72.4673171 L200.48,72.4673171 L199.39122,80.9434146 L192.085854,80.9434146 L192.085854,103 L183.329951,103 L183.329951,80.9434146 L176,80.9434146 L176,72.4673171 L183.329951,72.4673171 L183.329951,66.2156098 C183.329951,58.9570732 187.754146,55 194.24,55 C197.331902,55 200,55.2341463 200.78439,55.3395122 Z" id="Facebook"></path>
-        	</g>
-	</symbol>
-
-	<symbol id="insta" viewBox="0 0 438.536 438.536">
-		<g>
-			<path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+</g>
+</symbol>
+<symbol id=facebook viewBox="0 0 25 48">
+<g transform="translate(-176.000000, -55.000000)">
+<path d="M200.78439,55.3395122 L200.78439,62.9141463 L196.28878,62.9258537 C192.764878,62.9258537 192.085854,64.6 192.085854,67.0468293 L192.085854,72.4673171 L200.48,72.4673171 L199.39122,80.9434146 L192.085854,80.9434146 L192.085854,103 L183.329951,103 L183.329951,80.9434146 L176,80.9434146 L176,72.4673171 L183.329951,72.4673171 L183.329951,66.2156098 C183.329951,58.9570732 187.754146,55 194.24,55 C197.331902,55 200,55.2341463 200.78439,55.3395122 Z" id=Facebook></path>
+</g>
+</symbol>
+<symbol id=insta viewBox="0 0 438.536 438.536">
+<g>
+<path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
 				C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
 				h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
 				C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
@@ -52,12 +47,11 @@
 				c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
 				c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
 				c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
-		</g>
-	</symbol>
-
-	<symbol id="google" viewBox="0 0 96.828 96.827">
-		<g>
-			<path d="M62.617,0H39.525c-10.29,0-17.413,2.256-23.824,7.552c-5.042,4.35-8.051,10.672-8.051,16.912
+</g>
+</symbol>
+<symbol id=google viewBox="0 0 96.828 96.827">
+<g>
+<path d="M62.617,0H39.525c-10.29,0-17.413,2.256-23.824,7.552c-5.042,4.35-8.051,10.672-8.051,16.912
 				c0,9.614,7.33,19.831,20.913,19.831c1.306,0,2.752-0.134,4.028-0.253l-0.188,0.457c-0.546,1.308-1.063,2.542-1.063,4.468
 				c0,3.75,1.809,6.063,3.558,8.298l0.22,0.283l-0.391,0.027c-5.609,0.384-16.049,1.1-23.675,5.787
 				c-9.007,5.355-9.707,13.145-9.707,15.404c0,8.988,8.376,18.06,27.09,18.06c21.76,0,33.146-12.005,33.146-23.863
@@ -68,52 +62,46 @@
 				c1.257,0,1.889,0,2.893,0.126c9.281,6.605,13.743,10.073,13.743,16.678C53.141,86.309,46.041,91.535,34.614,91.535z
 				 M34.489,40.756c-11.132,0-15.752-14.633-15.752-22.468c0-3.984,0.906-7.042,2.77-9.351c2.023-2.531,5.487-4.166,8.825-4.166
 				c10.221,0,15.873,13.738,15.873,23.233c0,1.498,0,6.055-3.148,9.22C40.94,39.337,37.497,40.756,34.489,40.756z"/>
-			<path d="M94.982,45.223H82.814V33.098c0-0.276-0.225-0.5-0.5-0.5H77.08c-0.276,0-0.5,0.224-0.5,0.5v12.125H64.473
+<path d="M94.982,45.223H82.814V33.098c0-0.276-0.225-0.5-0.5-0.5H77.08c-0.276,0-0.5,0.224-0.5,0.5v12.125H64.473
 				c-0.276,0-0.5,0.224-0.5,0.5v5.304c0,0.275,0.224,0.5,0.5,0.5H76.58V63.73c0,0.275,0.224,0.5,0.5,0.5h5.234
 				c0.275,0,0.5-0.225,0.5-0.5V51.525h12.168c0.276,0,0.5-0.223,0.5-0.5v-5.302C95.482,45.446,95.259,45.223,94.982,45.223z"/>
-		</g>
-	</symbol>
-
-	<symbol id="search" viewBox="0 0 129 129">
-	  <g>
-	    <path d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
-	  </g>
-	</symbol>
-
-	<symbol id="bell" viewBox="0 0 448 512">
-		<g>
-			<path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"/>
-		</g>
-	</symbol>
-
-	<symbol id="arrow" viewBox="0 0 407.437 407.437">
-		<g>
-			<polygon points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "/>
-		</g>
-	</symbol>
-
-	<symbol id="clock" viewBox="0 0 32 32" fill="none" stroke="#b5904e" stroke-linecap="round" stroke-linejoin="round" stroke-width="3">
-		<g>
-			<circle cx="16" cy="16" r="14" />
-    		<path d="M16 8 L16 16 20 20" />
-		</g>
-	</symbol>
-
-	<symbol id="heart" viewBox="0 0 471.701 471.701">
-		<g>
-			<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
+</g>
+</symbol>
+<symbol id=search viewBox="0 0 129 129">
+<g>
+<path d="M51.6,96.7c11,0,21-3.9,28.8-10.5l35,35c0.8,0.8,1.8,1.2,2.9,1.2s2.1-0.4,2.9-1.2c1.6-1.6,1.6-4.2,0-5.8l-35-35   c6.5-7.8,10.5-17.9,10.5-28.8c0-24.9-20.2-45.1-45.1-45.1C26.8,6.5,6.5,26.8,6.5,51.6C6.5,76.5,26.8,96.7,51.6,96.7z M51.6,14.7   c20.4,0,36.9,16.6,36.9,36.9C88.5,72,72,88.5,51.6,88.5c-20.4,0-36.9-16.6-36.9-36.9C14.7,31.3,31.3,14.7,51.6,14.7z"/>
+</g>
+</symbol>
+<symbol id=bell viewBox="0 0 448 512">
+<g>
+<path d="M224 512c35.32 0 63.97-28.65 63.97-64H160.03c0 35.35 28.65 64 63.97 64zm215.39-149.71c-19.32-20.76-55.47-51.99-55.47-154.29 0-77.7-54.48-139.9-127.94-155.16V32c0-17.67-14.32-32-31.98-32s-31.98 14.33-31.98 32v20.84C118.56 68.1 64.08 130.3 64.08 208c0 102.3-36.15 133.53-55.47 154.29-6 6.45-8.66 14.16-8.61 21.71.11 16.4 12.98 32 32.1 32h383.8c19.12 0 32-15.6 32.1-32 .05-7.55-2.61-15.27-8.61-21.71z"/>
+</g>
+</symbol>
+<symbol id=arrow viewBox="0 0 407.437 407.437">
+<g>
+<polygon points="386.258,91.567 203.718,273.512 21.179,91.567 0,112.815 203.718,315.87 407.437,112.815 "/>
+</g>
+</symbol>
+<symbol id=clock viewBox="0 0 32 32" fill=none stroke=#b5904e stroke-linecap=round stroke-linejoin=round stroke-width=3>
+<g>
+<circle cx=16 cy=16 r=14 />
+<path d="M16 8 L16 16 20 20"/>
+</g>
+</symbol>
+<symbol id=heart viewBox="0 0 471.701 471.701">
+<g>
+<path d="M433.601,67.001c-24.7-24.7-57.4-38.2-92.3-38.2s-67.7,13.6-92.4,38.3l-12.9,12.9l-13.1-13.1
 			c-24.7-24.7-57.6-38.4-92.5-38.4c-34.8,0-67.6,13.6-92.2,38.2c-24.7,24.7-38.3,57.5-38.2,92.4c0,34.9,13.7,67.6,38.4,92.3
 			l187.8,187.8c2.6,2.6,6.1,4,9.5,4c3.4,0,6.9-1.3,9.5-3.9l188.2-187.5c24.7-24.7,38.3-57.5,38.3-92.4
 			C471.801,124.501,458.301,91.701,433.601,67.001z M414.401,232.701l-178.7,178l-178.3-178.3c-19.6-19.6-30.4-45.6-30.4-73.3
 			s10.7-53.7,30.3-73.2c19.5-19.5,45.5-30.3,73.1-30.3c27.7,0,53.8,10.8,73.4,30.4l22.6,22.6c5.3,5.3,13.8,5.3,19.1,0l22.4-22.4
 			c19.6-19.6,45.7-30.4,73.3-30.4c27.6,0,53.6,10.8,73.2,30.3c19.6,19.6,30.3,45.6,30.3,73.3
 			C444.801,187.101,434.001,213.101,414.401,232.701z"/>
-		</g>
-	</symbol>
-
-	<symbol id="vk"  viewBox="0 0 511.962 511.962">
-		<g>
-			<path d="M250.503,400.807h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
+</g>
+</symbol>
+<symbol id=vk viewBox="0 0 511.962 511.962">
+<g>
+<path d="M250.503,400.807h30.592c0,0,9.248-1.024,13.952-6.112c4.352-4.672,4.192-13.44,4.192-13.44
 			s-0.608-41.056,18.464-47.104c18.784-5.952,42.912,39.68,68.48,57.248c19.328,13.28,34.016,10.368,34.016,10.368l68.384-0.96
 			c0,0,35.776-2.208,18.816-30.336c-1.376-2.304-9.888-20.8-50.848-58.816c-42.88-39.808-37.12-33.344,14.528-102.176
 			c31.456-41.92,44.032-67.52,40.096-78.464c-3.744-10.432-26.88-7.68-26.88-7.68l-76.928,0.448c0,0-5.696-0.768-9.952,1.76
@@ -124,1174 +112,988 @@
 			c-15.648-27.04-27.488-56.96-27.488-56.96s-2.272-5.568-6.336-8.544c-4.928-3.616-11.84-4.768-11.84-4.768l-73.152,0.448
 			c0,0-10.976,0.32-15.008,5.088c-3.584,4.256-0.288,13.024-0.288,13.024s57.28,133.984,122.112,201.536
 			C182.983,404.871,250.503,400.807,250.503,400.807L250.503,400.807z"/>
-		</g>
-	</symbol>
-
-	<symbol id="fb" viewBox="0 0 10 20">
-		<g id="Page-1" stroke="none" stroke-width="1">
-        	<g id="Dribbble-Light-Preview" transform="translate(-385.000000, -7399.000000)">
-            	<g id="icons" transform="translate(56.000000, 160.000000)">
-	                <path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id="facebook-[#176]"></path>
-            </g>
-        </g>
-    </g>
-	</symbol>
-
-	<symbol id="ok" viewBox="0 0 512.008 512.008">
-		<g>
-			<path d="M256.002,256c70.592,0,128-57.408,128-128s-57.408-128-128-128s-128,57.408-128,128
+</g>
+</symbol>
+<symbol id=fb viewBox="0 0 10 20">
+<g id=Page-1 stroke=none stroke-width=1>
+<g id=Dribbble-Light-Preview transform="translate(-385.000000, -7399.000000)">
+<g id=icons transform="translate(56.000000, 160.000000)">
+<path d="M335.821282,7259 L335.821282,7250 L338.553693,7250 L339,7246 L335.821282,7246 L335.821282,7244.052 C335.821282,7243.022 335.847593,7242 337.286884,7242 L338.744689,7242 L338.744689,7239.14 C338.744689,7239.097 337.492497,7239 336.225687,7239 C333.580004,7239 331.923407,7240.657 331.923407,7243.7 L331.923407,7246 L329,7246 L329,7250 L331.923407,7250 L331.923407,7259 L335.821282,7259 Z" id=facebook-[#176]></path>
+</g>
+</g>
+</g>
+</symbol>
+<symbol id=ok viewBox="0 0 512.008 512.008">
+<g>
+<path d="M256.002,256c70.592,0,128-57.408,128-128s-57.408-128-128-128s-128,57.408-128,128
 			S185.41,256,256.002,256z M256.002,64c35.296,0,64,28.704,64,64s-28.704,64-64,64s-64-28.704-64-64S220.706,64,256.002,64z"/>
-			<path d="M425.73,252.448c-12.512-12.512-32.736-12.512-45.248,0c-68.608,68.608-180.288,68.608-248.928,0
+<path d="M425.73,252.448c-12.512-12.512-32.736-12.512-45.248,0c-68.608,68.608-180.288,68.608-248.928,0
 			c-12.512-12.512-32.736-12.512-45.248,0s-12.512,32.736,0,45.28c39.808,39.808,90.272,62.496,142.304,68.416l-91.232,91.232
 			c-12.512,12.512-12.512,32.736,0,45.248c12.512,12.512,32.736,12.512,45.248,0l73.376-73.376l73.376,73.376
 			c6.24,6.24,14.432,9.376,22.624,9.376s16.384-3.136,22.624-9.376c12.512-12.512,12.512-32.736,0-45.248l-91.232-91.232
 			c52.032-5.92,102.496-28.608,142.304-68.416C438.21,285.216,438.21,264.96,425.73,252.448z"/>
-		</g>
-	</symbol>
+</g>
+</symbol>
 </svg>
-
-<aside class="left__content">
-	<nav class="nav">
-
-		<div class="nav__item links">
-			<a href="#" class="nav__link">Рецепты</a>
-			<a href="#" class="nav__link">Продукты</a>
-			<a href="#" class="nav__link">Как приготовить</a>
-			<a href="#" class="nav__link">Кулинарная Книга</a>
-			<a href="#" class="nav__link">Здоровье</a>
-			<a href="#" class="nav__link">Авторы</a>
-		</div>
-
-		<button class="nav__darkMode">Dark mode</button>
-
-		<div class="nav__item lang">
-			<a href="#" class="lang__item">ru</a>
-			<a href="#" class="lang__item">en</a>
-		</div>
-
-		<div class="nav__item social">
-			<a href="#">
-				<svg class="svg">
-					<use xlink:href="#vk"></use>
-				</svg>
-			</a>
-			<a href="#">
-				<svg class="svg">
-					<use xlink:href="#facebook"></use>
-				</svg>
-			</a>
-			<a href="#">
-				<svg class="svg">
-					<use xlink:href="#insta"></use>
-				</svg>
-			</a>
-			<a href="#">
-				<svg class="svg">
-					<use xlink:href="#google"></use>
-				</svg>
-			</a>
-		</div>
-
-	</nav>
-</aside> <!-- /left__content -->
-
-<!-- right__content -->
+<aside class=left__content>
+<nav class=nav>
+<div class="nav__item links">
+<a href=# class=nav__link>Рецепты</a>
+<a href=# class=nav__link>Продукты</a>
+<a href=# class=nav__link>Как приготовить</a>
+<a href=# class=nav__link>Кулинарная Книга</a>
+<a href=# class=nav__link>Здоровье</a>
+<a href=# class=nav__link>Авторы</a>
+</div>
+<button class=nav__darkMode>Dark mode</button>
+<div class="nav__item lang">
+<a href=# class=lang__item>ru</a>
+<a href=# class=lang__item>en</a>
+</div>
+<div class="nav__item social">
+<a href=#>
+<svg class=svg>
+<use xlink:href=#vk></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#facebook></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#insta></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#google></use>
+</svg>
+</a>
+</div>
+</nav>
+</aside>
 <div class="right__content right--header">
-	<!-- <div class="container"> -->
-		<div id="header" class="header">
-
-			<div id="header__icons">
-				<div class="header__left"></div>
-
-				<div class="header__center">
-
-					<div class="header__search">
-						<form action="/form.php" class="header__form">
-							<img src="img/search.png" alt="img" class="form__img">
-							<input type="text" class="form__text" placeholder="Найти рецепт">
-							<input type="submit" value="" class="form__submit">
-						</form>
-					</div>
-
-					<div class="header__icons-right">
-						<a href="#" class="icon__notification">
-							<svg class="svg header__bell">
-								<use xlink:href="#bell"></use>
-							</svg>
-						</a>
-
-						<a href="#" class="icon__notification">
-							<img src="img/head.png" alt="img" class="icon__head">
-						</a>
-					</div>
-				</div> <!-- /header__center -->
-			</div> <!-- /header__icons -->
-
-			<div class="leaf">
-				<div class="leaf__left"></div>
-				<div class="leaf__right">
-					<div id="line__left"></div>
-					<img src="img/leaf.png" alt="leaf" id="leaf__img">
-					<div id="line__right"></div>
-				</div>
-			</div>
-
-		</div> <!-- /header -->
-
-		<div class="container">
-			
-		</div>
-
-	<!-- </div>  --><!-- /container -->
-</div> <!-- /right__content -->
-		
-<!-- choose -->
-<div class="right__content">
-	<div class="container">
-		
-		<div class="choose">
-			<h1 class="choose__title">ПОДБОР РЕЦЕПТОВ</h1>
-		</div>
-
-		<div class="drop__container">
-			<div class="dropdown dropdownDessert">
-				<button class="drop dropdown__btn active">Выпечка и десерты</button>
-				<span class="drop__arrow"></span>
-					<div  id="dessert" class="drop__links">
-						<a href="#">text</a>
-						<a href="#">text</a>
-						<a href="#">text</a>
-					</div>
-			</div>
-
-			<div class="dropdown">
-				<button class="drop dropdown__btn1">Любое блюдо</button>
-				<span class="drop__arrow"></span>
-					<div  id="dish" class="drop__links">
-						<a href="#">text</a>
-						<a href="#">text</a>
-						<a href="#">text</a>
-					</div>
-			</div>
-
-			<div class="dropdown">
-				<button class="drop dropdown__btn2">Любая кухня</button>
-				<span class="drop__arrow"></span>
-					<div  id="kitchen" class="drop__links">
-						<a href="#">text</a>
-						<a href="#">text</a>
-						<a href="#">text</a>
-					</div>
-			</div>
-
-			<div class="dropdown">
-				<button class="drop dropdown__btn3">Любое меню</button>
-				<span class="drop__arrow"></span>
-					<div  id="menu" class="drop__links">
-						<a href="#">text</a>
-						<a href="#">text</a>
-						<a href="#">text</a>
-					</div>
-			</div>
-
-			<div class="dropdown">
-				<button class="drop dropdown__btn4">Сложность</button>
-				<span class="drop__arrow"></span>
-					<div  id="difficulty" class="drop__links">
-						<a href="#">text</a>
-						<a href="#">text</a>
-						<a href="#">text</a>
-					</div>
-			</div>
-
-			<button class="drop__details">Ингредиенты, детали</button>
-			<button class="drop__recipes">Подобрать рецепты</button>
-
-		</div> <!-- /drop__container -->
-
-		<!-- select -->
-		<article class="select">
-			<a class="select__ingred ">Ингредиенты, детали</a>
-
-			<div class="select__details">Подобрать рецепты
-
-				<div class="details__cnr">
-					<div class="details__item">
-						<p class="details__title">Выпечка и десерты
-							<span class="details__arrow"></span>
-						</p>
-						<div class="details__list">
-							<a href="#" class="list-item">Вишневый пирог</a>
-							<a href="#" class="list-item">Наполеон</a>
-							<a href="#" class="list-item">Творожник</a>
-						</div>
-					</div>
-					<div class="details__item">
-						<p class="details__title">Любое блюдо
-						<span class="details__arrow"></span></p>
-						<div class="details__list">
-							<a href="#" class="list-item">Борщ</a>
-							<a href="#" class="list-item">Каша</a>
-							<a href="#" class="list-item">Компот</a>
-						</div>
-					</div>
-					<div class="details__item">
-						<p class="details__title">Любая кухня
-						<span class="details__arrow"></span></p>
-						<div class="details__list">
-							<a href="#" class="list-item">Итальянская</a>
-							<a href="#" class="list-item">Мексиканаская</a>
-							<a href="#" class="list-item">Азиатская</a>
-						</div>
-					</div>
-					<div class="details__item">
-						<p class="details__title">Любое меню
-						<span class="details__arrow"></span></p>
-						<div class="details__list">
-							<a href="#" class="list-item">Горячие закуски</a>
-							<a href="#" class="list-item">Холодные закуски</a>
-							<a href="#" class="list-item">Винный лист</a>
-						</div>
-					</div>
-					<div class="details__item">
-						<p class="details__title">Сложность
-						<span class="details__arrow"></span></p>
-						<div class="details__list">
-							<a href="#" class="list-item">Легко</a>
-							<a href="#" class="list-item">Средне</a>
-							<a href="#" class="list-item">Сложно</a>
-						</div>
-					</div>
-				</div>
-				<span class="select__arrow"></span>
-			</div>
-
-		</article>
-		<!-- ...select -->
-
-		<!-- recipes -->
-		<div class="recipes">
-			
-			<a href="#" class="recipes__item recipes--chicken">
-				<img src="img/recipes/first.webp" class="chicken" alt="chicken grille">
-				<div class="recipes__content">
-					<div class="recipes__title1">БЛЮДО ДНЯ</div>
-					<div class="recipes__title2">КУРИНЫЕ НОЖКИ НА ГРИЛЕ</div>
-					<img src="img/recipes/spoon.png" class="spoon" alt="img">
-				</div>
-			</a>
-
-			<a href="#" class="recipes__item recipes--cheese">
-				<img src="img/recipes/cheese.webp" class="cheese" alt="cheese grille">
-				<div class="recipes__content">
-					<div class="recipes__title1">ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ</div>
-					<div class="recipes__title2">7 ЛУЧШИХ РЕЦЕПТОВ <br> НЕДЕЛИ</div>
-					<img src="img/recipes/spoon.png" class="spoon" alt="img">
-				</div>
-			</a>
-
-			<a href="#" class="recipes__item recipes--cake">
-				<img src="img/recipes/cake.webp" class="cake" alt="cake grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-				<div class="recipes__title3 recipes-active">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</div>
-			</a>
-
-			<a href="#" class="recipes__item recipes--cheeseCake">
-				<img src="img/recipes/cheese-cake.webp" class="cheeseCake" alt="cheeseCake grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-				<p class="recipes__title3">КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ С ОВОЩАМИ</p>
-			</a>
-
-			<a href="#" class="recipes__item recipes--cola">
-				<img src="img/recipes/cola.webp" class="cola" alt="cola grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-				<div class="recipes__title3">10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</div>
-			</a>
-
-			<a href="#" class="recipes__item recipes--honey">
-				<img src="img/recipes/honey.webp" class="honey" alt="honey grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-				<div class="recipes__title3">ЧТО ТАКОЕ МЕД ?</div>
-			</a>
-
-			<a href="#" class="recipes__item recipes--dough">
-				<img src="img/recipes/dough.webp" class="dough" alt="dough grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-					<p class="recipes__title3">КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ ТЕСТО</p>
-			</a>
-
-			<a href="#" class="recipes__item recipes--meatball">
-				<img src="img/recipes/meatball.webp" class="meatball" alt="meatball grille">
-				<div class="recipes__useful">
-					<img src="img/recipes/hat.png" class="recipes__hat" alt="hat">
-					<p>Полезное</p>
-				</div>
-				<div class="recipes__title3">ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</div>
-			</a>
-
-		</div> <!-- /recipes -->
-		
-
-		<div class="leaf1">
-			<div class="leaf__left"></div>
-			<img src="img/leaf.png" alt="leaf" class="leaf__img">
-			<div class="leaf__right"></div>
-		</div>
-
-		<!-- recipes2 -->
-		<div class="recipes2">
-			<h2 class="choose__title choose--second">Рецепты</h2>
-
-			<div class="recipes2__sort">
-				<a href="#" class="recipes2__link">Новые рецепты</a>
-				<a href="#" class="recipes2__link">Популярные</a>
-				<a href="#" class="recipes2__link">Рекомендуем</a>
-			</div>
-		</div> <!-- /recipes2 -->
-
-		<!-- cards -->
-		<div class="cards">
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card1.webp" alt="food" class="card__img">
-						<div class="card__author">
-							<img src="img/cards/dana.png" alt="icon" class="card__icon">
-							<p class="card__name">Daria Fedorenko</p>
-						</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Утиные ножки с овощами и грудинкой</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-
-				</div> <!-- /card__content -->
-			</div>  <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card2.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Салат из свеклы с козьим сыром и медовой заправкой</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card3.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Американский тыквенный пирог с корицей</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card4.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Салат «Цезарь» традиционный фасолью</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card5.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Соте из брюссельской капусты с варено-копченым окороком</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card6.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Жареные баклажаны с помидорами</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card7.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title card__title-bottom">Наварен из говядины</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card8.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Брюссельская капуста с белым соусом с сыром</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card9.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Печеночный торт с морковью и луком</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-			<div class="card__item">
-				<div class="card__image">
-					<img src="img/cards/card10.webp" alt="food" class="card__img">
-					<div class="card__author">
-						<img src="img/cards/dana.png" alt="icon" class="card__icon">
-						<p class="card__name">Daria Fedorenko</p>
-					</div>
-				</div>
-
-				<div class="card__content">
-					<a href="#">
-						<p class="card__title">Классический крабовый салат с огурцом и мидиями</p>
-					</a>
-
-					<div class="card-content__parameters">
-
-						<div class="card-content__item">
-							<svg class="card-content__clock">
-								<use xlink:href="#clock"></use>
-							</svg>
-							<p class="card-content__text">135 мин</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/hat.png" class="card-content__hat" alt="hat">
-							<p class="card-content__text">Сложно</p>
-						</div>
-
-						<div class="card-content__item">
-							<img src="img/cards/kkal.png" alt="kkal">
-							<p class="card-content__text">125 ккал</p>
-						</div>
-
-					</div> <!-- /card-content__parameters -->
-
-					<p class="card__ingredients">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
-					<p class="card__ingredients-new">говядина, масло топлёное, лук репчатый,  морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
-
-					<div class="card-social">
-						<div class="card-social__likes">
-							<button class="card-social__btn">
-								<svg class="card-social__svg">
-									<use xlink:href="#heart"></use>
-								</svg>
-							</button>
-							<div class="card-social__num">16</div>
-						</div> <!-- /card-social__likes -->
-
-						<div class="card-social__icons">
-							<button>
-								<svg class="card-social__vk">
-									<use xlink:href="#vk"></use>
-								</svg>
-							</button>
-							<button>
-								<svg class="card-social__fb">
-									<use xlink:href="#fb"></use>
-								</svg>
-							</button>
-							<button>
-								<svg  class="card-social__ok">
-									<use xlink:href="#ok"></use>
-								</svg>
-							</button>
-						</div> <!-- /card-social__icons -->
-					</div> <!-- /card-social -->
-				</div> <!-- /card__content -->
-			</div> <!-- /card__item -->
-
-		</div> <!-- /cards -->
-
-		<div class="leaf1 leaf2">
-			<div class="leaf__left"></div>
-			<img src="img/leaf.png" alt="leaf" class="leaf__img">
-			<div class="leaf__right"></div>
-		</div>
-
-		<p class="title">#ГОРЯЧАЯ ПОДБОРКА</p>
-
-		<div class="hotRecipes">
-
-			<a class="hotRecipes__item hotRecipes__item-left">
-				<img src="img/recipes/hot1.webp" alt="img" class="hotRecipes__img">
-				<p class="hotRecipes__text">ПОХМЕЛЬНЫЕ РЕЦЕПТЫ</p>
-			</a>
-
-			<a class="hotRecipes__item hotRecipes__item-right">
-				<img src="img/recipes/hot2.webp" alt="img" class="hotRecipes__img">
-				<p class="hotRecipes__text">МАСЛЕНИЦА</p>
-			</a>
-
-			<a class="hotRecipes__item hotRecipes__item-left">
-				<img src="img/recipes/hot3.webp" alt="img" class="hotRecipes__img">
-				<p class="hotRecipes__text">РЕЦЕПТЫ ДЛЯ ДЕТЕЙ</p>
-			</a>
-
-			<a class="hotRecipes__item hotRecipes__item-right">
-				<img src="img/recipes/hot4.webp" alt="img" class="hotRecipes__img">
-				<p class="hotRecipes__text">ЗДОРОВОЕ ПИТАНИЕ</p>
-			</a>
-
-		</div> <!-- /hotRecipes -->
-
-		<p class="title title--second">ТОП АВТОРОВ</p>
-
-		<!-- authors -->
-    <!-- ............test 0.1............. -->
-    <div class="center">
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    	<div class="carouselDiv">
-    		<a href="#"><img src="img/author11.jpg" alt="img" class="sliderImg"></a>
-    	</div>
-    </div>
-    <!-- /............test 0.1............. -->
-
-	</div> <!-- /container -->
-
-	<!-- mailing -->
-	<div class="mailing">
-		<div class="container">
-		<h4 class="mailing__title">ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</h4>
-		<form action="/action_page.php" method="post">
-			<input type="email" id="email" name="email" placeholder="Адрес электронной почты" required>
-			<button type="submit" value="" id="submit" class="mailing__btn">
-				<span></span>
-			</button>
-		</form>
-		</div>
-	</div> <!-- /mailing -->
-
-	<!-- footer -->
-	<div class="footer">
-		<div class="container">
-			
-			<div class="footer__inner">
-				
-				<div class="footer__left">
-					<div class="left-cnr">
-						<a href="#" class="footer__link">ГЛАВНАЯ</a>
-						<a href="#" class="footer__link">РЕЦЕПТЫ</a>
-						<a href="#" class="footer__link">ИДЕИ</a>
-						<a href="#" class="footer__link">ЖУРНАЛ</a>
-					</div>
-					<div class="left-cnr left-cnr2">
-						<a href="#" class="footer__link">АВТОРЫ</a>
-						<a href="#" class="footer__link">РЕКЛАМА</a>
-						<a href="#" class="footer__link">FAQ</a>
-					</div>
-				</div>
-
-				<div class="social footer-sicial">
-					<a href="#">
-						<svg class="svg">
-							<use xlink:href="#vk"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="svg">
-							<use xlink:href="#facebook"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="svg">
-							<use xlink:href="#insta"></use>
-						</svg>
-					</a>
-					<a href="#">
-						<svg class="svg">
-							<use xlink:href="#google"></use>
-						</svg>
-					</a>
-				</div> <!-- /footer__right -->
-			</div> <!-- /footer__inner -->
-		</div> <!-- /container -->
-	</div> <!-- /footer -->
-
-</div> <!-- /right__content -->
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
-
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-
-<script src="app.js"></script>
-
+<div id=header class=header>
+<div id=header__icons>
+<div class=header__left></div>
+<div class=header__center>
+<div class=header__search>
+<form action=/form.php class=header__form>
+<img src=img/search.png alt=img class=form__img>
+<input class=form__text placeholder="Найти рецепт">
+<input type=submit class=form__submit>
+</form>
+</div>
+<div class=header__icons-right>
+<a href=# class=icon__notification>
+<svg class="svg header__bell">
+<use xlink:href=#bell></use>
+</svg>
+</a>
+<a href=# class=icon__notification>
+<img src=img/head.png alt=img class=icon__head>
+</a>
+</div>
+</div>
+</div>
+<div class=leaf>
+<div class=leaf__left></div>
+<div class=leaf__right>
+<div id=line__left></div>
+<img src=img/leaf.png alt=leaf id=leaf__img>
+<div id=line__right></div>
+</div>
+</div>
+</div>
+<div class=container>
+</div>
+
+</div>
+<div class=right__content>
+<div class=container>
+<div class=choose>
+<h1 class=choose__title>ПОДБОР РЕЦЕПТОВ</h1>
+</div>
+<div class=drop__container>
+<div class="dropdown dropdownDessert">
+<button class="drop dropdown__btn active">Выпечка и десерты</button>
+<span class=drop__arrow></span>
+<div id=dessert class=drop__links>
+<a href=#>text</a>
+<a href=#>text</a>
+<a href=#>text</a>
+</div>
+</div>
+<div class=dropdown>
+<button class="drop dropdown__btn1">Любое блюдо</button>
+<span class=drop__arrow></span>
+<div id=dish class=drop__links>
+<a href=#>text</a>
+<a href=#>text</a>
+<a href=#>text</a>
+</div>
+</div>
+<div class=dropdown>
+<button class="drop dropdown__btn2">Любая кухня</button>
+<span class=drop__arrow></span>
+<div id=kitchen class=drop__links>
+<a href=#>text</a>
+<a href=#>text</a>
+<a href=#>text</a>
+</div>
+</div>
+<div class=dropdown>
+<button class="drop dropdown__btn3">Любое меню</button>
+<span class=drop__arrow></span>
+<div id=menu class=drop__links>
+<a href=#>text</a>
+<a href=#>text</a>
+<a href=#>text</a>
+</div>
+</div>
+<div class=dropdown>
+<button class="drop dropdown__btn4">Сложность</button>
+<span class=drop__arrow></span>
+<div id=difficulty class=drop__links>
+<a href=#>text</a>
+<a href=#>text</a>
+<a href=#>text</a>
+</div>
+</div>
+<button class=drop__details>Ингредиенты, детали</button>
+<button class=drop__recipes>Подобрать рецепты</button>
+</div>
+<article class=select>
+<a class=select__ingred>Ингредиенты, детали</a>
+<div class=select__details>Подобрать рецепты
+<div class=details__cnr>
+<div class=details__item>
+<p class=details__title>Выпечка и десерты
+<span class=details__arrow></span>
+</p>
+<div class=details__list>
+<a href=# class=list-item>Вишневый пирог</a>
+<a href=# class=list-item>Наполеон</a>
+<a href=# class=list-item>Творожник</a>
+</div>
+</div>
+<div class=details__item>
+<p class=details__title>Любое блюдо
+<span class=details__arrow></span></p>
+<div class=details__list>
+<a href=# class=list-item>Борщ</a>
+<a href=# class=list-item>Каша</a>
+<a href=# class=list-item>Компот</a>
+</div>
+</div>
+<div class=details__item>
+<p class=details__title>Любая кухня
+<span class=details__arrow></span></p>
+<div class=details__list>
+<a href=# class=list-item>Итальянская</a>
+<a href=# class=list-item>Мексиканаская</a>
+<a href=# class=list-item>Азиатская</a>
+</div>
+</div>
+<div class=details__item>
+<p class=details__title>Любое меню
+<span class=details__arrow></span></p>
+<div class=details__list>
+<a href=# class=list-item>Горячие закуски</a>
+<a href=# class=list-item>Холодные закуски</a>
+<a href=# class=list-item>Винный лист</a>
+</div>
+</div>
+<div class=details__item>
+<p class=details__title>Сложность
+<span class=details__arrow></span></p>
+<div class=details__list>
+<a href=# class=list-item>Легко</a>
+<a href=# class=list-item>Средне</a>
+<a href=# class=list-item>Сложно</a>
+</div>
+</div>
+</div>
+<span class=select__arrow></span>
+</div>
+</article>
+<div class=recipes>
+<a href=# class="recipes__item recipes--chicken">
+<img src=img/recipes/first.webp class=chicken alt="chicken grille">
+<div class=recipes__content>
+<div class=recipes__title1>БЛЮДО ДНЯ</div>
+<div class=recipes__title2>КУРИНЫЕ НОЖКИ НА ГРИЛЕ</div>
+<img src=img/recipes/spoon.png class=spoon alt=img>
+</div>
+</a>
+<a href=# class="recipes__item recipes--cheese">
+<img src=img/recipes/cheese.webp class=cheese alt="cheese grille">
+<div class=recipes__content>
+<div class=recipes__title1>ЛУЧШИЕ РЕЦЕПТЫ НЕДЕЛИ</div>
+<div class=recipes__title2>7 ЛУЧШИХ РЕЦЕПТОВ <br> НЕДЕЛИ</div>
+<img src=img/recipes/spoon.png class=spoon alt=img>
+</div>
+</a>
+<a href=# class="recipes__item recipes--cake">
+<img src=img/recipes/cake.webp class=cake alt="cake grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<div class="recipes__title3 recipes-active">КАК ПРИГОТОВИТЬ ПИРОГ В ОДНОЙ ПОСУДЕ 5 РЕЦЕПТОВ</div>
+</a>
+<a href=# class="recipes__item recipes--cheeseCake">
+<img src=img/recipes/cheese-cake.webp class=cheeseCake alt="cheeseCake grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<p class=recipes__title3>КАК ПРИГОТОВИТЬ СЫРНЫЙ ТОРТ С ОВОЩАМИ</p>
+</a>
+<a href=# class="recipes__item recipes--cola">
+<img src=img/recipes/cola.webp class=cola alt="cola grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<div class=recipes__title3>10 ПРОСТЫХ НАПИТКОВ В ЖАРУ</div>
+</a>
+<a href=# class="recipes__item recipes--honey">
+<img src=img/recipes/honey.webp class=honey alt="honey grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<div class=recipes__title3>ЧТО ТАКОЕ МЕД ?</div>
+</a>
+<a href=# class="recipes__item recipes--dough">
+<img src=img/recipes/dough.webp class=dough alt="dough grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<p class=recipes__title3>КАК ПРАВИЛЬНО ЗАМЕСИТЬ ДРОЖЕВОЕ ТЕСТО</p>
+</a>
+<a href=# class="recipes__item recipes--meatball">
+<img src=img/recipes/meatball.webp class=meatball alt="meatball grille">
+<div class=recipes__useful>
+<img src=img/recipes/hat.png class=recipes__hat alt=hat>
+<p>Полезное</p>
+</div>
+<div class=recipes__title3>ЧЕЛОВЕК, КОТОРЫЙ ДЕЛАЕТ ЛУЧШИЕ МИТБОЛЫ В БЕЛЬГИИ</div>
+</a>
+</div>
+<div class=leaf1>
+<div class=leaf__left></div>
+<img src=img/leaf.png alt=leaf class=leaf__img>
+<div class=leaf__right></div>
+</div>
+<div class=recipes2>
+<h2 class="choose__title choose--second">Рецепты</h2>
+<div class=recipes2__sort>
+<a href=# class=recipes2__link>Новые рецепты</a>
+<a href=# class=recipes2__link>Популярные</a>
+<a href=# class=recipes2__link>Рекомендуем</a>
+</div>
+</div>
+<div class=cards>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card1.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Утиные ножки с овощами и грудинкой</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card2.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Салат из свеклы с козьим сыром и медовой заправкой</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card3.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Американский тыквенный пирог с корицей</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card4.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Салат «Цезарь» традиционный фасолью</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card5.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Соте из брюссельской капусты с варено-копченым окороком</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card6.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Жареные баклажаны с помидорами</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card7.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class="card__title card__title-bottom">Наварен из говядины</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg aria-label=Justify class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card8.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Брюссельская капуста с белым соусом с сыром</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card9.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Печеночный торт с морковью и луком</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div class=card__item>
+<div class=card__image>
+<img src=img/cards/card10.webp alt=food class=card__img>
+<div class=card__author>
+<img src=img/cards/dana.png alt=icon class=card__icon>
+<p class=card__name>Daria Fedorenko</p>
+</div>
+</div>
+<div class=card__content>
+<a href=#>
+<p class=card__title>Классический крабовый салат с огурцом и мидиями</p>
+</a>
+<div class=card-content__parameters>
+<div class=card-content__item>
+<svg class=card-content__clock>
+<use xlink:href=#clock></use>
+</svg>
+<p class=card-content__text>135 мин</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/hat.png class=card-content__hat alt=hat>
+<p class=card-content__text>Сложно</p>
+</div>
+<div class=card-content__item>
+<img src=img/cards/kkal.png alt=kkal>
+<p class=card-content__text>125 ккал</p>
+</div>
+</div>
+<p class=card__ingredients>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель, чеснок, бульон мясной, соль, перец черный, зелень петрушки...</p>
+<p class=card__ingredients-new>говядина, масло топлёное, лук репчатый, морковь, редька, перец сладкий, помидоры, томат-пюре, картофель...</p>
+<div class=card-social>
+<div class=card-social__likes>
+<button aria-label=Justify class=card-social__btn>
+<svg class=card-social__svg>
+<use xlink:href=#heart></use>
+</svg>
+</button>
+<div class=card-social__num>16</div>
+</div>
+<div class=card-social__icons>
+<button aria-label=Justify>
+<svg class=card-social__vk>
+<use xlink:href=#vk></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__fb>
+<use xlink:href=#fb></use>
+</svg>
+</button>
+<button aria-label=Justify>
+<svg class=card-social__ok>
+<use xlink:href=#ok></use>
+</svg>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="leaf1 leaf2">
+<div class=leaf__left></div>
+<img src=img/leaf.png alt=leaf class=leaf__img>
+<div class=leaf__right></div>
+</div>
+<p class=title>#ГОРЯЧАЯ ПОДБОРКА</p>
+<div class=hotRecipes>
+<a href=# class="hotRecipes__item hotRecipes__item-left">
+<img src=img/recipes/hot1.webp alt=img class=hotRecipes__img>
+<p class=hotRecipes__text>ПОХМЕЛЬНЫЕ РЕЦЕПТЫ</p>
+</a>
+<a href=# class="hotRecipes__item hotRecipes__item-right">
+<img src=img/recipes/hot2.webp alt=img class=hotRecipes__img>
+<p class=hotRecipes__text>МАСЛЕНИЦА</p>
+</a>
+<a href=# class="hotRecipes__item hotRecipes__item-left">
+<img src=img/recipes/hot3.webp alt=img class=hotRecipes__img>
+<p class=hotRecipes__text>РЕЦЕПТЫ ДЛЯ ДЕТЕЙ</p>
+</a>
+<a href=# class="hotRecipes__item hotRecipes__item-right">
+<img src=img/recipes/hot4.webp alt=img class=hotRecipes__img>
+<p class=hotRecipes__text>ЗДОРОВОЕ ПИТАНИЕ</p>
+</a>
+</div>
+<p class="title title--second">ТОП АВТОРОВ</p>
+<div class=center>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+<div class=carouselDiv>
+<a href=#><img src=img/author11.jpg alt=img class=sliderImg></a>
+</div>
+</div>
+</div>
+<div class=mailing>
+<div class=container>
+<h1 class=mailing__title>ПОДПИШИТЕСЬ НА РАССЫЛКУ РЕЦЕПТОВ И СОВЕТОВ</h1>
+<form action=/action_page.php method=post>
+<input type=email id=email name=email placeholder="Адрес электронной почты" required>
+<button type=submit value="" id=submit class=mailing__btn aria-label=Justify>
+<span></span>
+</button>
+</form>
+</div>
+</div>
+<div class=footer>
+<div class=container>
+<div class=footer__inner>
+<div class=footer__left>
+<div class=left-cnr>
+<a href=# class=footer__link>ГЛАВНАЯ</a>
+<a href=# class=footer__link>РЕЦЕПТЫ</a>
+<a href=# class=footer__link>ИДЕИ</a>
+<a href=# class=footer__link>ЖУРНАЛ</a>
+</div>
+<div class="left-cnr left-cnr2">
+<a href=# class=footer__link>АВТОРЫ</a>
+<a href=# class=footer__link>РЕКЛАМА</a>
+<a href=# class=footer__link>FAQ</a>
+</div>
+</div>
+<div class="social footer-sicial">
+<a href=#>
+<svg class=svg>
+<use xlink:href=#vk></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#facebook></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#insta></use>
+</svg>
+</a>
+<a href=#>
+<svg class=svg>
+<use xlink:href=#google></use>
+</svg>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.5.0/jquery.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js></script>
+<script src=app.js></script>
 </body>
 </html>
-
-
-
